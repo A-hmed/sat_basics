@@ -10,7 +10,7 @@ Color lightBlack = Color(0xff303136);
 TextStyle digitStyle =
     TextStyle(fontWeight: FontWeight.w700, fontSize: 30, color: Colors.white);
 TextStyle resultStyle =
-    TextStyle(fontWeight: FontWeight.w500, fontSize: 48, color: lightBlue);
+    TextStyle(fontWeight: FontWeight.w500, fontSize: 50, color: Colors.black);
 
 class Calculator extends StatefulWidget {
   static String routeName = "calculator";
