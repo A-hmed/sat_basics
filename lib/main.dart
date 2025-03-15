@@ -11,7 +11,7 @@ var blueDecoration =
     BoxDecoration(color: blue, borderRadius: BorderRadius.circular(16));
 Color blue = Color(0xff024383);
 TextStyle white700BoldStyle =
-    TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16);
+    TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16);
 
 void main() {
   runApp(MyApp());
