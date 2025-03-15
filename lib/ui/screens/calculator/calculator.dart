@@ -8,7 +8,7 @@ Color grey = Color(0xff616161);
 Color lightBlack = Color(0xff303136);
 
 TextStyle digitStyle =
-    TextStyle(fontWeight: FontWeight.w500, fontSize: 32, color: lightBlue);
+    TextStyle(fontWeight: FontWeight.w700, fontSize: 30, color: Colors.white);
 TextStyle resultStyle =
     TextStyle(fontWeight: FontWeight.w500, fontSize: 48, color: lightBlue);
 
@@ -31,36 +31,31 @@ class _CalculatorState extends State {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: calculatorBackground,
-      body: Container(
-        child: Column(
-          children: [
-            Expanded(
-              child: Center(
-                child: Container(
-                  width: double.infinity,
-                  child: Column(
-                    children: [
-                      Text("history"),
-                      Text(
-                        result,
-                        textAlign: TextAlign.end,
-                        style: resultStyle,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: Row(
+      body: Column(
+        children: [
+          Expanded(
+            child: Center(
+              child: Column(
                 children: [
-                  firstSetOfButtons(),
-                  secondSetOfButtons(),
+                  Text("history"),
+                  Text(
+                    result,
+                    textAlign: TextAlign.end,
+                    style: resultStyle,
+                  ),
                 ],
               ),
-            )
-          ],
-        ),
+            ),
+          ),
+          Expanded(
+            child: Row(
+              children: [
+                firstSetOfButtons(),
+                secondSetOfButtons(),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }

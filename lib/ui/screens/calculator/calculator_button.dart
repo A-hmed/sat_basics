@@ -17,7 +17,7 @@ class CalculatorButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: EdgeInsets.all(4),
       child: ElevatedButton(
           onPressed: () {
             onClick(text);
@@ -26,7 +26,7 @@ class CalculatorButton extends StatelessWidget {
               minimumSize: WidgetStatePropertyAll(
                   Size(double.infinity, double.infinity)),
               shape: WidgetStatePropertyAll(RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16))),
+                  borderRadius: BorderRadius.circular(20))),
               backgroundColor: WidgetStatePropertyAll(backgroundColor)),
           child: Text(
             text,
