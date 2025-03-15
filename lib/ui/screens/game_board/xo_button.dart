@@ -21,7 +21,8 @@ class XoButton extends StatelessWidget {
             },
             child: Text(
               symbol,
-              style: symbol == "o" ? oStyle : xStyle,
+              style:
+                  symbol == "o" ? oStyle.copyWith(color: Colors.blue) : xStyle,
             )));
   }
 }
